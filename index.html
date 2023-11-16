@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale-1.0" />
+    <title>Meu Website - Rafael Lourenço</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rafael Lourenço</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre Mim</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburguer-nav">
+      <div class="logo">Rafael Lourenço</div>
+      <div class="hamburguer-menu">
+        <div class="hamburguer-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Rafael Lourenço Foto">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou o </p>
+        <h1 class="title">Rafael Lourenço</h1>
+        <p class="section__text__p2">IT Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/curriculum.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contactos</button>
+        </div>
+        <div id="social-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn" 
+          class="icon" onclick="location.href='https://www.linkedin.com/in/rafael02lourenco/'"/>
+          <img src="./assets/github.png" alt="GitHub" 
+          class="icon" onclick="location.href='https://github.com/Rafa200200'"/>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Queres saber mais</p>
+      <h1 class="title">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section__pic-containter">
+          <img src="./assets/about-pic-modified.png" alt="Rafael Foto" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" 
+              alt="experiência icone" 
+              class = "icon"/>
+              <h3>Experiência</h3>
+              <p>Licenciatura em Informática Web, Móvel e Digital</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" 
+              alt="Estudos" 
+              class="icon"/>
+              <h3>Estudos</h3>
+              <p>Ensino Secundário em Ciências e Tecnologias - Escola D.Maria II<br />Licenciatura em Informática Web,Móvel e na Nuvem - Universidade da Beira Interior</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            O meu nome é Rafael Antunes Lourenço, sou interessado pela programação desde cerca dos meus 16 anos, motivo pelo qual escolhi seguir este caminho de estudos.
+            Após o meu secundário, estive a trabalhar na fábrica da Renova, o que me deu um grande sentido de responsabilidade e mesmo tendo "perdido" um ano, sinto que foi uma mais valia em termos de crescimento pessoal, pois aprendi a trabalhar em equipa, cumprir prazos e também metas de produção.
+            Sou também voluntário na Associação Jovem 'Factor J', associação do Entroncamento, onde participo na dinamização de eventos e de atividades, acima de tudo direcionados à população mais jovem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="seta" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+      <p class="section__text__p2">A minha</p>
+      <h1 class="title_e">Experiência</h1>
+      <div class="experience-details-container">
+        <h2 class="experience-sub-title">Conhecimentos</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>HTML</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>CSS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>JavaScript</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>Python</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>PHP</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>MySQL</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>NodeJS</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>Cybersecurity</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>Adobe Illustrator</h3>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png"
+            alt="Icone experiencia"
+            class="icon"
+            />
+            <div>
+              <h3>Photoshop</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="seta"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p2">Veja os meus</p>
+      <h1 class="title">Projetos</h1>
+      <p class="experience-sub-title">Clique na imagem</p>
+      <div class="project-container">
+        <img src="./assets/GitHub.png" alt="GitHub" class="project-image small-image" onclick="location.href='https://github.com/Rafa200200?tab=repositories'" />
+      </div>
+      <img src="./assets/arrow.png" alt="seta" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Como podes falar comigo?</p>
+      <h1 class="title">Contacta-me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:rafaelantuneslourenco@gmail.com">rafaelantuneslourenco@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rafael02lourenco/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>2023 Rafael Antunes Lourenço </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
